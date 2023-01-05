@@ -16,7 +16,7 @@ def new_vacancy():
         connect.executemany(query, data)
 
 
-def show_vacancy():
+def find_vacancy():
     name = input(" -> Название вакансии: ")
     with connect:
         data = connect.execute(f"SELECT * FROM VACANCY WHERE name_vacancy LIKE '%{name}%'")

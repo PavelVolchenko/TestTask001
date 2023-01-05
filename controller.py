@@ -1,4 +1,4 @@
-from model import show_vacancy, new_vacancy
+from model import find_vacancy, new_vacancy
 from view import show_menu as ui
 
 
@@ -10,6 +10,6 @@ def controller():
             case 1:
                 new_vacancy()
             case 2:
-                show_vacancy()
+                find_vacancy()
     else:
         print("\t========== Конец работы ==========")
